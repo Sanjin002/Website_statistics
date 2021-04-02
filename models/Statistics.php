@@ -22,7 +22,7 @@
     public function read() {
       // Create query
       $query = 'SELECT t.name as tool_name, s.id, s.tool_id, s.sessions, s.browsers, s.users, s.created_at
-                                FROM ' . $this->table . ' p
+                                FROM ' . $this->table . ' s
                                 LEFT JOIN
                                   tools t ON s.tool_id = t.id
                                 ORDER BY
